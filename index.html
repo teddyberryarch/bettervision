@@ -59,7 +59,7 @@ nav {
 }
 .hero-h {
   font-family:'Playfair Display',serif;
-  font-size:clamp(90px,13vw,180px);
+  font-size:clamp(60px,9vw,130px);
   font-weight:300; line-height:.85; letter-spacing:-.01em; color:var(--fg);
 }
 .hero-h em { font-style:italic; display:block; }
@@ -176,7 +176,7 @@ footer{padding:48px 60px;display:flex;justify-content:space-between;align-items:
 /* ANIMATIONS */
 @keyframes up{from{opacity:0;transform:translateY(32px);}to{opacity:1;transform:translateY(0);}}
 @keyframes fadein{from{opacity:0;}to{opacity:1;}}
-.rv{opacity:0;transform:translateY(26px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);}
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1.2s cubic-bezier(.16,1,.3,1),transform 1.2s cubic-bezier(.16,1,.3,1);}
 .rv.visible{opacity:1;transform:translateY(0);}
 .d1{transition-delay:.1s;}.d2{transition-delay:.22s;}.d3{transition-delay:.34s;}.d4{transition-delay:.46s;}
 
@@ -200,7 +200,7 @@ footer{padding:48px 60px;display:flex;justify-content:space-between;align-items:
 <body>
 
 <nav>
-  <a class="logo" href="/">Bettervision</a>
+  
   <div class="nav-r">
     <a class="nav-a" href="#product">Product</a>
     <a class="nav-a" href="#network">Network</a>
@@ -215,8 +215,7 @@ footer{padding:48px 60px;display:flex;justify-content:space-between;align-items:
     <h1 class="hero-h">Better<em>Vision</em></h1>
     <p class="hero-sub">
       Premium Eyewear<br>
-      9 Custom Sizes<br>
-      Seoul, Korea
+      9 Custom Sizes
     </p>
   </div>
   <div class="scroll-hint">
