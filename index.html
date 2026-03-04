@@ -28,7 +28,14 @@ nav {
   position:fixed; top:0; left:0; right:0; z-index:200;
   display:flex; justify-content:space-between; align-items:center;
   padding:36px 60px;
-  mix-blend-mode:difference;
+  background: rgba(5,5,4,0.0);
+  transition: background .4s, padding .4s;
+}
+nav.scrolled {
+  background: rgba(5,5,4,0.92);
+  backdrop-filter: blur(12px);
+  padding: 22px 60px;
+  mix-blend-mode: normal;
 }
 .logo {
   font-family:'Playfair Display', serif;
@@ -224,7 +231,7 @@ footer {
 }
 .ft-logo {
   font-family:'Playfair Display', serif;
-  font-size:13px; letter-spacing:.3em; text-transform:uppercase;
+  font-size:11px; letter-spacing:.55em; text-transform:uppercase;
 }
 .ft-mid {
   font-family:'Playfair Display', serif;
@@ -304,7 +311,7 @@ footer {
     <h1 class="hero-h">better,<em>vision.</em></h1>
     <p class="hero-sub">
       Premium Eyewear<br>
-      Custom Size
+      Custom Eyewear
     </p>
   </div>
   <div class="scroll-hint">
@@ -373,9 +380,7 @@ footer {
     <span class="tag rv">Partner Network</span>
     <h2 class="network-h rv d1">Nationwide<br>Partner<br>Opticians</h2>
     <p class="network-d rv d2">
-      Order online.<br>
-      Get fitted at your nearest partner optician.<br>
-      Prescription lenses handled locally.
+
     </p>
     <form action="https://formspree.io/f/xwvngokr" method="POST" class="contact-form rv d3" id="contact">
       <input type="email" name="email" placeholder="Your email" required>
