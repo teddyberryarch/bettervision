@@ -237,6 +237,28 @@ footer {
   font-size:11px; letter-spacing:.12em; color:rgba(236,233,225,0.2);
 }
 
+
+/* CONTACT FORM */
+.contact-form { display:flex; flex-direction:column; gap:12px; max-width:400px; }
+.contact-form input, .contact-form textarea {
+  background:transparent; border:none; border-bottom:1px solid rgba(236,233,225,0.2);
+  color:var(--fg); font-family:'Playfair Display', serif;
+  font-size:13px; letter-spacing:.08em; padding:12px 0; outline:none;
+  transition:border-color .3s;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder { color:var(--dim); }
+.contact-form input:focus, .contact-form textarea:focus { border-color:var(--fg); }
+.contact-form textarea { resize:none; line-height:1.8; }
+.contact-form button {
+  display:inline-block; margin-top:8px;
+  font-family:'Playfair Display', serif;
+  font-size:10px; letter-spacing:.35em; text-transform:uppercase;
+  color:var(--fg); background:transparent; border:none;
+  border-bottom:1px solid rgba(236,233,225,0.3); padding-bottom:6px;
+  cursor:pointer; transition:border-color .3s, opacity .3s; text-align:left;
+}
+.contact-form button:hover { border-color:var(--fg); opacity:.7; }
+
 /* SCROLL REVEAL */
 .rv { opacity:1; transform:translateY(0); }
 .rv.visible { opacity:1; transform:translateY(0); }
