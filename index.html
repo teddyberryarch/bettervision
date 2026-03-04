@@ -377,7 +377,11 @@ footer {
       Get fitted at your nearest partner optician.<br>
       Prescription lenses handled locally.
     </p>
-    <a href="/cdn-cgi/l/email-protection#52313d3c2633312612303726263720243b213b3d3c7c313d7c3920" class="cta rv d3" id="contact">Inquire about partnership</a>
+    <form action="https://formspree.io/f/xwvngokr" method="POST" class="contact-form rv d3" id="contact">
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" placeholder="Tell us about your optician" rows="3" required></textarea>
+      <button type="submit">Inquire about partnership</button>
+    </form>
   </div>
   <div class="orbit-wrap rv d2">
     <div class="orbit">
@@ -395,7 +399,8 @@ footer {
 <!-- FOOTER -->
 <footer>
   <div class="ft-logo">Bettervision</div>
-  <div class="ft-mid">Seoul &nbsp;·&nbsp; <a href="/cdn-cgi/l/email-protection#63000c0d1702001723010617170611150a100a0c0d4d000c4d0811"><span class="__cf_email__" data-cfemail="c1a2aeafb5a0a2b581a3a4b5b5a4b3b7a8b2a8aeafefa2aeefaab3">[email&#160;protected]</span></a></div>
+  <div class="ft-mid">Seoul &nbsp;·&nbsp; <span id="ftmail"></span></div>
+  <script>document.getElementById("ftmail").textContent="contact@"+"bettervision.co.kr";</script>
   <div class="ft-r">© 2025 Bettervision</div>
 </footer>
 
